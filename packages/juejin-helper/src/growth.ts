@@ -56,7 +56,7 @@ class Growth {
     cont_count: number;
     sum_count: number;
   }> {
-    return this.http.get("/growth_api/v1/get_counts");
+    return this.http.get("/growth_api/v1/get_counts?aid=2608&uuid=7380730470655542822&spider=0");
   }
 
   /**
@@ -65,7 +65,7 @@ class Growth {
    * number 当前矿石数
    */
   async getCurrentPoint() {
-    return this.http.get("/growth_api/v1/get_cur_point");
+    return this.http.get("/growth_api/v1/get_cur_point?aid=2608&uuid=7380730470655542822&spider=0");
   }
 
   /**
@@ -74,7 +74,7 @@ class Growth {
    * boolean 是否签到
    */
   async getTodayStatus() {
-    return this.http.get("/growth_api/v1/get_today_status");
+    return this.http.get("/growth_api/v1/get_today_status?aid=2608&uuid=7380730470655542822&spider=0");
   }
 
   /**
@@ -89,15 +89,15 @@ class Growth {
    * ]
    */
   async getByMonth() {
-    return this.http.get("/growth_api/v1/get_by_month");
+    return this.http.get("/growth_api/v1/get_by_month?aid=2608&uuid=7380730470655542822&spider=0");
   }
 
   async getLotteryConfig() {
-    return this.http.get("/growth_api/v1/lottery_config/get");
+    return this.http.get("/growth_api/v1/lottery_config/get?aid=2608&uuid=7380730470655542822&spider=0");
   }
 
   async drawLottery() {
-    return this.http.post("/growth_api/v1/lottery/draw");
+    return this.http.post("/growth_api/v1/lottery/draw?aid=2608&uuid=7380730470655542822&spider=0");
   }
 
   async checkIn() {
